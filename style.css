@@ -1,0 +1,119 @@
+/* Estilos gerais da página */
+body {
+    background-color: #f7f8fa;
+    color: #242424;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #555;
+    color: white;
+    padding: 24px 16px;
+}
+
+.cabecalho h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Texto da apresentação */
+.apresentacao p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+/* Bandeira */
+.bandeira {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Títulos das seções */
+h2 {
+    color: #222;
+    font-size: 1.7rem;
+}
+
+/* Ícones de redes sociais */
+.sites img {
+    width: 72px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.sites a:hover img {
+    transform: scale(1.08);
+}
+
+/* Tabela */
+.tabela-gostos {
+    max-width: 650px;
+    margin: 0 auto;
+    vertical-align: middle;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
+}
+
+.tabela-gostos th,
+.tabela-gostos td {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #e9ecef;
+    color: #444;
+}
+
+/* Tablets e telas médias */
+@media (max-width: 768px) {
+    .cabecalho h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .apresentacao p {
+        font-size: 1rem;
+    }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+    .cabecalho {
+        padding: 20px 12px;
+    }
+
+    .cabecalho h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    main.container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .sites {
+        gap: 20px !important;
+    }
+
+    .sites img {
+        width: 58px;
+    }
+
+    .tabela-gostos th,
+    .tabela-gostos td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
